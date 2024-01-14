@@ -1,0 +1,4 @@
+- name: Test Bronze Task
+  id: BRZ-001
+  description: |
+    This is a test task, its tier is bronze.

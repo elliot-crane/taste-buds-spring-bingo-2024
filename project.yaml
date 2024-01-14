@@ -1,0 +1,17 @@
+name: Taste Buds Spring Bingo 2024
+tiers:
+  - name: Bronze
+    code: BRZ
+    points: 10
+  - name: Silver
+    code: SLV
+    points: 50
+  - name: Gold
+    code: GLD
+    points: 100
+  - name: Platinum
+    code: PLT
+    points: 250
+  - name: Diamond
+    code: DIA
+    points: 500
