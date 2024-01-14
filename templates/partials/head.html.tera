@@ -1,4 +1,0 @@
-<head>
-  <title>{{ name }}</title>
-  <link type="text/css" rel="stylesheet" href="/static/index.css" />
-</head>
