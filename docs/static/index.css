@@ -1,1 +1,47 @@
-@import url('https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css');
+/* import open props CSS variables */
+@import "https://unpkg.com/open-props";
+
+/* import Noto Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* tier colors */
+.color-bronze-tier {
+  color: var(--choco-8);
+}
+
+.color-silver-tier {
+  color: var(--gray-5);
+}
+
+.color-gold-tier {
+  color: var(--yellow-4);
+}
+
+.color-platinum-tier {
+  color: var(--stone-3);
+}
+
+.color-diamond-tier {
+  color: var(--cyan-2);
+}
+
+/* clear underline from abbr tags */
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+/* set global font override */
+*, html, body {
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+/* custom classes augmenting bootstrap */
+.navbar-bg-brand {
+  background-color: var(--indigo-9);
+}
+
+.font-small {
+  font-size: 0.75rem;
+}
