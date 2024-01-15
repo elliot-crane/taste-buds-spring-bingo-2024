@@ -45,7 +45,9 @@
             </div>
           </div>
         </div>
-        <p class="card-text">{{ task.task.description }}</p>
+        <div class="card-text">
+          {{ task.task.description | markdown | safe }}
+        </div>
       </div>
     </div>
   </div>
