@@ -34,7 +34,7 @@
       {% block content %}
       {% endblock content %}
     </div>
-    <footer class="navbar sticky-bottom">
+    <footer class="navbar">
       <div class="container my-5 font-small text-secondary">
         <div class="row flex-fill">
           <div class="col text-center">
