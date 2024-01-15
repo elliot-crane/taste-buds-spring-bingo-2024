@@ -12,6 +12,7 @@
     {% endblock head %}
   </head>
   <body class="d-flex flex-column min-vh-100">
+    {% block navbar %}
     <header class="navbar navbar-expand-lg navbar-bg-brand sticky-top">
       <nav class="container my-2">
         <a class="navbar-brand" href="{{ base_url }}">
@@ -25,11 +26,18 @@
           <div class="navbar-nav">
             <a class="nav-link" href="#">Leaderboard</a>
             <a class="nav-link" href="#">Teams</a>
-            <a class="nav-link" href="{{ base_url }}/tasklist.html">Tasks</a>
+            <a
+              class="nav-link {% if __PAGE__ and __PAGE__ == 'TASKS' %}active{% endif %}"
+              href="{{ base_url }}/tasklist.html"
+              {% if __PAGE__ and __PAGE__ == "TASKS" %}aria-current="page"{% endif %}
+            >
+              Tasks
+            </a>
           </div>
         </div>
       </nav>
     </header>
+    {% endblock navbar %}
     <div id="content" class="container flex-grow-1 pt-4">
       {% block content %}
       {% endblock content %}

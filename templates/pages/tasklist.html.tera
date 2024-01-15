@@ -5,6 +5,12 @@
 {% block head %}
 {{ super() }}
 {% endblock head %}
+
+{% block navbar %}
+{% set_global __PAGE__ = "TASKS" %}
+{{ super() }}
+{% endblock navbar %}
+
 {% block content %}
 
 {% include "partials/warning-banner.html.tera" %}
@@ -18,8 +24,7 @@
 {% for task_id in task_ordering %}
 {% set task = tasks_by_id[task_id] %}
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="{{- task_id | slugify -}}" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
@@ -44,7 +49,6 @@
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 {% endfor %}
 
