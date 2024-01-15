@@ -2,6 +2,7 @@
   id: BRZ-001
   description: |
     This is a test task, its tier is bronze.
+
     Here is some **Markdown** content in the task description.
     This should be [rendered correctly](#brz-001).
 - name: Test Silver Task
