@@ -1,16 +1,87 @@
-<!DOCTYPE html>
-<html>
-  {% include "partials/head.html.tera" %}
-  <body>
-    <h1>Tasks</h1>
+{% extends "partials/base.html.tera" %}
+{% import "partials/macros.html.tera" as macros %}
+
+{% block title %}Index{% endblock title %}
+{% block head %}
+  {{ super() }}
+{% endblock head %}
+{% block content %}
+<div class="row">
+  <div class="col">
+    <h1>{{ name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
     <p>
-      <ul>
-        {% for task_id in task_ordering %}
-        <li>
-          {{ tasks_by_id[task_id].task.name }}
-        </li>
-        {% endfor %}
-      </ul>
+      Thanks for checking out our clan bingo page.
+      This competition will be going live in <b>April 2024</b>.
+      Watch this space for more information about how to sign up and play as the start date approaches.
     </p>
-  </body>
-</html>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      In the meantime, you can keep reading for a bit more info on how this competition will work.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h2>Basic Gameplay</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      Players will be divided into between 4 and 5 teams based on how many participants there are.
+      To the best of our organizers' abilities, teams will be balanced to avoid one team being the clear favorite.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      There will be a buy-in somewhere in the neighborhood of 5 million to 10 million GP.
+      This will make up the prize pool.
+      At the end of bingo, the first place team will win 70% of the prize pool, and the second place team will win 30%.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      Teams will compete for points from a shared list of tasks.
+      Each team is allowed to complete a task <b>exactly once</b>.
+      Tasks will be organized into five different difficulty levels:
+      Bronze ({{ macros::badge(tier="BRZ") }}),
+      Silver ({{ macros::badge(tier="SLV") }}),
+      Gold ({{ macros::badge(tier="GLD") }}),
+      Platinum ({{ macros::badge(tier="PLT") }}), and
+      Diamond ({{ macros::badge(tier="DIA") }}),
+      with difficulty increasing in that order.
+      The higher the difficulty of a task, the more points it's worth.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      This website will provide a semi-live (updated within 15 minutes) leaderboard that
+      teams may use to track their progress.
+    </p>
+  </div>
+</div>
+
+{% include "partials/faq.html.tera" %}
+
+{# <ul>
+  {% for task_id in task_ordering %}
+  <li>
+    {{ tasks_by_id[task_id].task.name }}
+  </li>
+  {% endfor %}
+</ul> #}
+{% endblock content %}

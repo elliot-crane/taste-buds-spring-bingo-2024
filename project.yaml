@@ -1,4 +1,5 @@
 name: Taste Buds Spring Bingo 2024
+base_url: /taste-buds-spring-bingo-2024
 tiers:
   - name: Bronze
     code: BRZ

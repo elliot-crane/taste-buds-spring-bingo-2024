@@ -1,0 +1,15 @@
+<div>
+  <div class="row">
+    <div class="col">
+      <h2>FAQ</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>
+        Nobody's asked any questions yet...
+      </p>
+    </div>
+  </div>
+</div>
