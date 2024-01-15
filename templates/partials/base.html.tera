@@ -25,7 +25,7 @@
           <div class="navbar-nav">
             <a class="nav-link" href="#">Leaderboard</a>
             <a class="nav-link" href="#">Teams</a>
-            <a class="nav-link" href="#">Tasks</a>
+            <a class="nav-link" href="{{ base_url }}/tasklist.html">Tasks</a>
           </div>
         </div>
       </nav>

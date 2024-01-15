@@ -2,3 +2,19 @@
   id: BRZ-001
   description: |
     This is a test task, its tier is bronze.
+- name: Test Silver Task
+  id: SLV-001
+  description: |
+    This is a test task, its tier is silver.
+- name: Test Gold Task
+  id: GLD-001
+  description: |
+    This is a test task, its tier is gold.
+- name: Test Platinum Task
+  id: PLT-001
+  description: |
+    This is a test task, its tier is platinum.
+- name: Test Diamond Task
+  id: DIA-001
+  description: |
+    This is a test task, its tier is diamond.

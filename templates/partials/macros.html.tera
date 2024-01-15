@@ -23,3 +23,7 @@
 <i class="ti ti-help-octagon-filled">{{ tier }}</i>
 {% endif %}
 {% endmacro badge %}
+
+{% macro points(tier) %}
+{{- tiers_by_code[tier].points -}}
+{% endmacro points %}

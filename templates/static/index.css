@@ -56,3 +56,7 @@ abbr[title] {
   color: white;
   font-weight: bold;
 }
+
+.card-squared {
+  border-radius: 0;
+}

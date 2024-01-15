@@ -1,0 +1,41 @@
+{% extends "partials/base.html.tera" %}
+{% import "partials/macros.html.tera" as macros %}
+
+{% block title %}Tasks{% endblock title %}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+{% block content %}
+
+{% include "partials/warning-banner.html.tera" %}
+
+<div class="row mb-2">
+  <div class="col">
+    <h1>Tasks</h1>
+  </div>
+</div>
+
+{% for task_id in task_ordering %}
+{% set task = tasks_by_id[task_id] %}
+<div class="row my-1">
+  <div class="col"></div>
+  <div class="col-10">
+    <div id="{{- task_id | slugify -}}" class="card card-squared">
+      <div class="card-body">
+        <div class="card-title fs-5">
+          <div class="row">
+            <div class="col-10">{{ macros::badge(tier=task.tier) }} {{ task.task.name }} ({{ macros::points(tier=task.tier) }}pts)</div>
+            <div class="col-2 fs-6 text-body-tertiary text-end user-select-all">
+              {{ task_id }}
+            </div>
+          </div>
+        </div>
+        <p class="card-text">{{ task.task.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
+{% endfor %}
+
+{% endblock content %}
