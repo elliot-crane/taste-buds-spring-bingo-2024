@@ -6,6 +6,7 @@
   {{ super() }}
 {% endblock head %}
 {% block content %}
+
 <div class="row">
   <div class="col">
     <h1>{{ name }}</h1>
