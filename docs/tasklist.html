@@ -14,6 +14,9 @@
 
   </head>
   <body class="d-flex flex-column min-vh-100">
+    
+
+
     <header class="navbar navbar-expand-lg navbar-bg-brand sticky-top">
       <nav class="container my-2">
         <a class="navbar-brand" href="/taste-buds-spring-bingo-2024">
@@ -27,11 +30,19 @@
           <div class="navbar-nav">
             <a class="nav-link" href="#">Leaderboard</a>
             <a class="nav-link" href="#">Teams</a>
-            <a class="nav-link" href="/taste-buds-spring-bingo-2024/tasklist.html">Tasks</a>
+            <a
+              class="nav-link active"
+              href="/taste-buds-spring-bingo-2024/tasklist.html"
+              aria-current="page"
+            >
+              Tasks
+            </a>
           </div>
         </div>
       </nav>
     </header>
+    
+
     <div id="content" class="container flex-grow-1 pt-4">
       
 
@@ -55,15 +66,14 @@
 
 
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="brz-001" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   
 
 <abbr title="Bronze">
@@ -71,33 +81,44 @@
 </abbr>
 
 10</div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">Test Bronze Task</div>
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">Test Bronze Task</div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               BRZ-001
             </div>
           </div>
         </div>
-        <p class="card-text">This is a test task, its tier is bronze.
-</p>
+        <div class="card-text">
+          <p>This is a test task, its tier is bronze.</p>
+<p>Here is some <strong>Markdown</strong> content in the task description.
+This should be <a href="#brz-001">rendered correctly</a>.</p>
+
+        </div>
+        
+        <div class="py-2 mx-2 border-top">
+          
+          <span class="badge rounded-pill text-bg-light">team-1</span>
+          
+          <span class="badge rounded-pill text-bg-light">team-2</span>
+          
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 
 
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="slv-001" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   
 
 <abbr title="Silver">
@@ -105,33 +126,40 @@
 </abbr>
 
 50</div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">Test Silver Task</div>
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">Test Silver Task</div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               SLV-001
             </div>
           </div>
         </div>
-        <p class="card-text">This is a test task, its tier is silver.
-</p>
+        <div class="card-text">
+          <p>This is a test task, its tier is silver.</p>
+
+        </div>
+        
+        <div class="py-2 mx-2 border-top">
+          
+          <span class="badge rounded-pill text-bg-light">team-1</span>
+          
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 
 
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="gld-001" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   
 
 <abbr title="Gold">
@@ -139,33 +167,34 @@
 </abbr>
 
 100</div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">Test Gold Task</div>
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">Test Gold Task</div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               GLD-001
             </div>
           </div>
         </div>
-        <p class="card-text">This is a test task, its tier is gold.
-</p>
+        <div class="card-text">
+          <p>This is a test task, its tier is gold.</p>
+
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 
 
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="plt-001" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   
 
 <abbr title="Platinum">
@@ -173,33 +202,34 @@
 </abbr>
 
 250</div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">Test Platinum Task</div>
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">Test Platinum Task</div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               PLT-001
             </div>
           </div>
         </div>
-        <p class="card-text">This is a test task, its tier is platinum.
-</p>
+        <div class="card-text">
+          <p>This is a test task, its tier is platinum.</p>
+
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 
 
 <div class="row my-1">
-  <div class="col"></div>
-  <div class="col-10 col-sm-12">
+  <div class="col">
     <div id="dia-001" class="card card-squared">
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   
 
 <abbr title="Diamond">
@@ -207,20 +237,22 @@
 </abbr>
 
 500</div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">Test Diamond Task</div>
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">Test Diamond Task</div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               DIA-001
             </div>
           </div>
         </div>
-        <p class="card-text">This is a test task, its tier is diamond.
-</p>
+        <div class="card-text">
+          <p>This is a test task, its tier is diamond.</p>
+
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="col"></div>
 </div>
 
 
