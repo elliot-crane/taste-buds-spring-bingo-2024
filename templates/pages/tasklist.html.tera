@@ -29,18 +29,18 @@
       <div class="card-body">
         <div class="card-title fs-5">
           <div class="row g-0 pb-1">
-            <div class="col-10 col-sm-8">
+            <div class="col-sm-8 col-md-10">
               <div class="row g-0">
-                <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1 text-body-secondary">
+                <div class="col-3 col-md-2 col-lg-1 text-body-secondary">
                   {{ macros::badge(tier=task.tier) }}
                   {{- macros::points(tier=task.tier) -}}
                 </div>
-                <div class="col-sm-8 col-md-9 col-lg-10 col-xl-11 ps-xl-3 text-truncate">
+                <div class="col-9 col-md-10 col-lg-11 ps-lg-3 text-truncate">
                   {{- task.task.name -}}
                 </div>
               </div>
             </div>
-            <div class="col-2 col-sm-4 fs-6 text-body-tertiary text-end user-select-all">
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
               {{ task_id }}
             </div>
           </div>
