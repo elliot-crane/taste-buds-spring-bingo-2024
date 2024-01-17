@@ -48,6 +48,13 @@
         <div class="card-text">
           {{ task.task.description | markdown | safe }}
         </div>
+        {% if task.completions %}
+        <div class="py-2 mx-2 border-top">
+          {% for completion in task.completions | sort(attribute="id") %}
+          <span class="badge rounded-pill text-bg-light">{{completion.id}}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -1,2 +1,6 @@
 - team_id: team-1
   task_id: BRZ-001
+- team_id: team-2
+  task_id: BRZ-001
+- team_id: team-1
+  task_id: SLV-001
