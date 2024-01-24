@@ -24,8 +24,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarLinks">
           <div class="navbar-nav">
-            <a class="nav-link" href="#">Leaderboard</a>
-            <a class="nav-link" href="#">Teams</a>
+            <a
+              class="nav-link {% if __PAGE__ and __PAGE__ == 'LEADERBOARD' %}active{% endif %}"
+              href="#"
+              {% if __PAGE__ and __PAGE__ == "LEADERBOARD" %}aria-current="page"{% endif %}
+            >
+              Leaderboard
+            </a>
+            <a
+              class="nav-link {% if __PAGE__ and __PAGE__ == 'TEAMS' %}active{% endif %}"
+              href="#"
+              {% if __PAGE__ and __PAGE__ == "TEAMS" %}aria-current="page"{% endif %}
+            >
+              Teams
+            </a>
             <a
               class="nav-link {% if __PAGE__ and __PAGE__ == 'TASKS' %}active{% endif %}"
               href="{{ base_url }}/tasklist.html"
