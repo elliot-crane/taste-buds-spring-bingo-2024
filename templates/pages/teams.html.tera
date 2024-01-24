@@ -1,0 +1,68 @@
+{% extends "partials/base.html.tera" %}
+{% import "partials/macros.html.tera" as macros %}
+
+{% block title %}Teams{% endblock title %}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{% block navbar %}
+{% set_global __PAGE__ = "TEAMS" %}
+{{ super() }}
+{% endblock navbar %}
+
+{% block content %}
+
+{% include "partials/warning-banner.html.tera" %}
+
+<div class="row mb-2">
+  <div class="col">
+    <h1>Leaderboard</h1>
+  </div>
+</div>
+
+{% for team_id in team_ordering %}
+{% set team = teams_by_id[team_id] %}
+<div class="row my-1">
+  <div class="col">
+    <div id="{{- team_id | slugify -}}" class="card card-squared">
+      <div class="card-body">
+        <div class="card-title fs-5">
+          <div class="row g-0 pb-1">
+            <div class="col-sm-8 col-md-10">
+              <div class="row g-0">
+                <div class="col-12 text-truncate">
+                  {{- team.team.name -}}
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-2 fs-6 text-body-tertiary text-sm-start text-md-end user-select-all">
+              {{ team_id }}
+            </div>
+          </div>
+        </div>
+        <div class="card-text">
+          <div class="row">
+            <div class="col">
+              <h6>Score: {{ team.points }}</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6>Players</h6>
+              <ul>
+                {% for player in team.team.members %}
+                <li>{{ player }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+
+{% endblock content %}

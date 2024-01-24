@@ -25,18 +25,11 @@
         <div class="collapse navbar-collapse" id="navbarLinks">
           <div class="navbar-nav flex-grow-1">
             <a
-              class="nav-link {% if __PAGE__ and __PAGE__ == 'LEADERBOARD' %}active{% endif %}"
-              href="#"
-              {% if __PAGE__ and __PAGE__ == "LEADERBOARD" %}aria-current="page"{% endif %}
-            >
-              Leaderboard
-            </a>
-            <a
               class="nav-link {% if __PAGE__ and __PAGE__ == 'TEAMS' %}active{% endif %}"
-              href="#"
+              href="{{ base_url }}/teams.html"
               {% if __PAGE__ and __PAGE__ == "TEAMS" %}aria-current="page"{% endif %}
             >
-              Teams
+              Leaderboard
             </a>
             <a
               class="nav-link {% if __PAGE__ and __PAGE__ == 'TASKS' %}active{% endif %}"
@@ -65,11 +58,13 @@
         <div class="row flex-fill">
           <div class="col text-center">
             <p>Hosted by Elliot Crane, Morktick, and Thirtys.</p>
+            <p>Last updated at <span data-timestamp="{{ now(timestamp=true, utc=true) * 1000 }}"></span></p>
           </div>
         </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script type="module" src="{{ base_url }}/static/index.js"></script>
   </body>
 </html>
