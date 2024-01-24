@@ -23,7 +23,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarLinks">
-          <div class="navbar-nav">
+          <div class="navbar-nav flex-grow-1">
             <a
               class="nav-link {% if __PAGE__ and __PAGE__ == 'LEADERBOARD' %}active{% endif %}"
               href="#"
@@ -44,6 +44,12 @@
               {% if __PAGE__ and __PAGE__ == "TASKS" %}aria-current="page"{% endif %}
             >
               Tasks
+            </a>
+          </div>
+          <div class="navbar-nav">
+            <a class="btn btn-outline-light" href="https://discord.gg/QrRsqjwTPq" target="_blank">
+              <i class="ti ti-brand-discord"></i>
+              Find Us On Discord
             </a>
           </div>
         </div>
